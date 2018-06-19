@@ -1,0 +1,295 @@
+.breadcrumb {
+  color: #666;
+  height: 45px;
+  overflow: hidden;
+  line-height: 45px;
+}
+.breadcrumb .spacer {
+  padding: 0 5px;
+  font-family: simsun;
+  display: inline-block;
+  vertical-align: middle;
+}
+.similar-rank {
+  float: left;
+  width: 210px;
+}
+.similar-rank .hd {
+  border-top: 3px solid #e4393c;
+}
+.similar-rank .hd h3 {
+  height: 35px;
+  line-height: 35px;
+  border-style: solid;
+  border-width: 0 1px;
+  border-color: #eaeaea;
+  text-align: center;
+  font-size: 14px;
+}
+.similar-rank .bd {
+  border: 1px solid #eaeaea;
+  border-top: 0;
+  overflow: hidden;
+}
+.similar-rank li {
+  height: 103px;
+  position: relative;
+  border-top: 1px dotted #eaeaea;
+  padding: 0 12px;
+}
+.similar-rank li .pic {
+  width: 98px;
+  height: 98px;
+}
+.similar-rank li .pic .subpic {
+  top: 50%;
+  left: 50%;
+}
+.similar-rank li .pic .subpic img {
+  max-width: 85px;
+  max-height: 85px;
+}
+.similar-rank li .title {
+  position: absolute;
+  overflow: hidden;
+  height: 36px;
+  width: 90px;
+  left: 110px;
+  top: 8px;
+  line-height: 18px;
+}
+.similar-rank li .price {
+  position: absolute;
+  left: 110px;
+  top: 55px;
+  line-height: 16px;
+  display: block;
+}
+.similar-rank li .price .price_d {
+  color: #DA0000;
+  font-weight: bold;
+  font-size: 15px;
+}
+.product-intro {
+  width: 980px;
+  position: relative;
+  float: left;
+  margin-left: 30px;
+  overflow: hidden;
+}
+.product-intro .show-pic {
+  float: left;
+  width: 350px;
+  border: 1px solid #ccc;
+}
+.product-intro .show-pic .box {
+  width: 350px;
+  height: 350px;
+  position: relative;
+}
+.product-intro .show-pic .box .big {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 360px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  display: none;
+  z-index: 5;
+}
+.product-intro .show-pic .box .big img {
+  position: absolute;
+}
+.product-intro .show-pic .box .mask {
+  width: 175px;
+  height: 175px;
+  background: rgba(255, 255, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: move;
+  display: none;
+}
+.product-intro .show-pic .box .small {
+  position: relative;
+}
+.product-intro .show-pic .box img {
+  vertical-align: top;
+}
+.product-intro .summary {
+  float: left;
+  margin-left: 50px;
+  width: 570px;
+  position: relative;
+}
+.product-intro .summary .name h2 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+.product-intro .summary .detail-info {
+  padding: 10px 0;
+  overflow: hidden;
+  border-bottom: 1px dotted #eaeaea;
+}
+.product-intro .summary .detail-info ul {
+  padding: 2px 0;
+  overflow: hidden;
+}
+.product-intro .summary .detail-info ul li {
+  float: left;
+  padding-right: 20px;
+  color: #999;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-sizing: border-box;
+  margin: 8px 0;
+}
+.product-intro .summary .detail-info ul li.t1 {
+  width: 100%;
+}
+.product-intro .summary .detail-info ul li.t2 {
+  width: 50%;
+}
+.product-intro .summary .buy-wrap .sale-wrap {
+  padding: 12px 0;
+  border-bottom: 1px dotted #eaeaea;
+}
+.product-intro .summary .buy-wrap .sale-wrap p {
+  clear: both;
+  padding: 5px 0;
+  overflow: hidden;
+}
+.product-intro .summary .buy-wrap .sale-wrap p span {
+  display: block;
+  float: left;
+}
+.product-intro .summary .buy-wrap .sale-wrap p .attr-title {
+  width: 68px;
+  display: block;
+  color: #999;
+  white-space: nowrap;
+}
+.product-intro .summary .buy-wrap .sale-wrap p .letter3 {
+  letter-spacing: 6px;
+}
+.product-intro .summary .buy-wrap .sale-wrap p .letter2 {
+  letter-spacing: 24px;
+}
+.product-intro .summary .buy-wrap .sale-wrap p .current-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #DA0000;
+  vertical-align: middle;
+}
+.product-intro .summary .buy-wrap .sale-wrap p .price {
+  text-decoration: line-through;
+}
+.product-intro .summary .buy-area {
+  padding-top: 10px;
+}
+.product-intro .summary .buy-area .attr-title {
+  float: left;
+  width: 72px;
+  margin-top: 8px;
+  color: #9a9a9a;
+}
+.product-intro .summary .buy-area .attr-con {
+  float: left;
+}
+.product-intro .summary .buy-area .attr-con .buy-num-active {
+  overflow: hidden;
+  float: left;
+  vertical-align: middle;
+}
+.product-intro .summary .buy-area .attr-con .buy-num-active a {
+  width: 29px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+  background-color: #e1e1e1;
+  color: #666;
+  font-size: 22px;
+  text-decoration: none;
+}
+.product-intro .summary .buy-area .attr-con .buy-num-active a.disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+.product-intro .summary .buy-area .attr-con .buy-num-text {
+  width: 55px;
+  height: 26px;
+  line-height: 26px;
+  border: 1px solid #e1e1e1;
+  text-align: center;
+  font-size: 16px;
+  outline: none;
+  float: left;
+}
+.product-intro .summary .buy-area .stock {
+  float: left;
+  color: #999;
+  margin-left: 15px;
+  line-height: 24px;
+}
+.product-intro .summary .buy-area .stock span {
+  color: #008000;
+  font-size: 24px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.product-intro .summary .buy-area .buy-active {
+  float: left;
+  width: 453px;
+  padding-top: 13px;
+}
+.product-intro .summary .buy-area .buy-active a {
+  display: inline-block;
+  border-radius: 3px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  padding: 0 20px;
+  color: #fff;
+  overflow: hidden;
+}
+.product-intro .summary .buy-area .buy-active .buy-but {
+  background: #e4393c;
+  margin-left: 20px;
+}
+.product-intro .summary .buy-area .buy-active .collect-but {
+  background: #be78c3;
+}
+.detail-wrap {
+  overflow: hidden;
+  padding: 20px 0;
+  margin-top: 20px;
+  width: 980px;
+  float: right;
+}
+.detail-wrap .section .txt-hd {
+  height: 30px;
+  border-bottom: 3px solid #ff2832;
+}
+.detail-wrap .section .txt-hd h5 {
+  display: inline-block;
+  float: left;
+  border-radius: 3px 3px 0 0;
+  background-color: #ff2832;
+  color: #fff;
+  padding: 0 20px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 100;
+}
+.detail-wrap .section .txt-bd {
+  font-size: 14px;
+  color: #444;
+  line-height: 28px;
+  padding: 10px 20px;
+}

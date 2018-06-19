@@ -1,0 +1,303 @@
+
+// 轮播图
+.module {
+  width: 100%;
+  height: 437px;
+  background: sandybrown;
+  ul {
+    position: relative;
+    li {
+      width: 100%;
+      position: absolute;
+      a {
+        display: block;
+        width: 100%;
+        height: 437px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        // background-image: url("../images/banner.jpg");
+        img {
+          height: 100%;
+          width: 100%;
+          visibility: hidden;
+        }
+      }
+    }
+  }
+}
+
+// 为你推荐
+.container {
+  margin-top: 20px;
+}
+
+.recommended-book {
+  padding-bottom: 20px;
+  zoom: 1;
+  overflow: hidden;
+}
+
+.recommended-book_left {
+  width: 960px;
+  float: left;
+  .headtuijian {
+    height: 50px;
+    border-bottom: 1px solid #e4393c;
+    .title {
+      height: 50px;
+      width: 110px;
+      float: left;
+      background: url(../images/title_sprite.png) no-repeat;
+      text-indent: -9999;
+      font-size: 0;
+    }
+    ul {
+      float: right;
+      margin-top: 17px;
+      li {
+        float: left;
+        margin-right: 4px;
+        font-family: "Microsoft Yahei";
+        a {
+          display: block;
+          padding: 2px 17px;
+          height: 32px;
+          line-height: 32px;
+          color: #666;
+          font-size: 14px;
+        }
+        &.on {
+          a {
+            border-radius: 6px 6px 0 0;
+            border: 2px solid #e4393c;
+            border-bottom: none;
+            color: #e4393c;
+            background: #fff;
+            padding: 0 15px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  .tab_content {
+    .content {
+      .list {
+        padding: 20px 0 0 0;
+        height: 508px;
+        overflow: hidden;
+        width: 100%;
+        li {
+          float: left;
+          width: 150px;
+          margin-right: 42px;
+          margin-bottom: 30px;
+          height: 233px;
+          position: relative;
+          .img {
+            width: 150px;
+            height: 150px;
+            display: block;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .name {
+            padding: 7px 20px 0;
+            height: 18px;
+            line-height: 18px;
+            overflow: hidden;
+            a {
+              color: #000;
+              &:hover {
+                color: #e4393c;
+                text-decoration: underline;
+              }
+            }
+          }
+          .author {
+            padding: 0 20px;
+            height: 24px;
+            line-height: 24px;
+            overflow: hidden;
+            color: #aaa;
+          }
+          .price {
+            padding-left: 20px;
+            height: 36px;
+            line-height: 16px;
+            font-family: "Arial";
+            font-size: 14px;
+            position: relative;
+            .rob {
+              color: #c30;
+              float: left;
+              margin-right: 12px;
+              font-weight: bold;
+            }
+            .price_r {
+              color: #aaa;
+              text-decoration: line-through;
+              float: left;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.recommended-book_right {
+  width: 250px;
+  float: right;
+  height: 500px;
+  .title {
+    height: 49px;
+    line-height: 55px;
+    padding-left: 40px;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    border-bottom: 2px solid #e4393c;
+    background: url(../images/rank.png) 5px 10px no-repeat;
+    font-family: "Microsoft Yahei";
+    position: relative;
+    overflow: hidden;
+  }
+  .book_content {
+    border: 1px solid #eaeaea;
+    border-top: 0;
+  }
+  ul {
+    li {
+      border-bottom: 1px dotted #d8d8d8;
+      width: 230px;
+      margin-left: 10px;
+      overflow: hidden;
+      > span.num {
+        width: 29px;
+        line-height: 36px;
+        padding-left: 6px;
+        float: left;
+        font-size: 16px;
+        color: #000;
+      }
+      //书名
+      .name {
+        float: left;
+        height: 36px;
+        line-height: 36px;
+        position: relative;
+        overflow: hidden;
+        width: 182px;
+        a {
+          color: #000;
+          word-break: break-all;
+          word-wrap: break-word;
+        }
+      }
+      //详情
+      .detail {
+        width: 195px;
+        float: left;
+        padding: 12px 0;
+        position: relative;
+        display: none;
+        .img {
+          display: block;
+          width: 120px;
+          height: 120px;
+          img {
+            display: block;
+            width: 120px;
+            height: 120px;
+          }
+        }
+        .name {
+          float: right;
+          width: 75px;
+          height: 44px;
+          line-height: 22px;
+          position: absolute;
+          overflow: hidden;
+          top: 9px;
+          right: 0;
+          a:hover {
+            color: #e4393c;
+            text-decoration: underline;
+          }
+        }
+        .price {
+          position: absolute;
+          top: 60px;
+          left: 120px;
+          font-size: 14px;
+          line-height: 20px;
+          font-family: "Arial";
+          color: #c30000;
+          height: 20px;
+          font-weight: 700;
+        }
+        .link {
+          position: absolute;
+          left: 120px;
+          top: 97px;
+          color: #487a6f;
+          a {
+            color: #487a6f;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  .more_top {
+    color: #5097bc;
+    width: 240px;
+    background: #fff;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+  }
+}
+
+//好书推荐
+.storey_three {
+  padding: 20px 0;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eaeaea;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  a {
+    display: block;
+    width: 382px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

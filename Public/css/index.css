@@ -1,0 +1,263 @@
+.module {
+  width: 100%;
+  height: 437px;
+  background: sandybrown;
+}
+.module ul {
+  position: relative;
+}
+.module ul li {
+  width: 100%;
+  position: absolute;
+}
+.module ul li a {
+  display: block;
+  width: 100%;
+  height: 437px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.module ul li a img {
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+}
+.container {
+  margin-top: 20px;
+}
+.recommended-book {
+  padding-bottom: 20px;
+  zoom: 1;
+  overflow: hidden;
+}
+.recommended-book_left {
+  width: 960px;
+  float: left;
+}
+.recommended-book_left .headtuijian {
+  height: 50px;
+  border-bottom: 1px solid #e4393c;
+}
+.recommended-book_left .headtuijian .title {
+  height: 50px;
+  width: 110px;
+  float: left;
+  background: url(../images/title_sprite.png) no-repeat;
+  text-indent: -9999;
+  font-size: 0;
+}
+.recommended-book_left .headtuijian ul {
+  float: right;
+  margin-top: 17px;
+}
+.recommended-book_left .headtuijian ul li {
+  float: left;
+  margin-right: 4px;
+  font-family: "Microsoft Yahei";
+}
+.recommended-book_left .headtuijian ul li a {
+  display: block;
+  padding: 2px 17px;
+  height: 32px;
+  line-height: 32px;
+  color: #666;
+  font-size: 14px;
+}
+.recommended-book_left .headtuijian ul li.on a {
+  border-radius: 6px 6px 0 0;
+  border: 2px solid #e4393c;
+  border-bottom: none;
+  color: #e4393c;
+  background: #fff;
+  padding: 0 15px;
+  font-weight: bold;
+}
+.recommended-book_left .tab_content .content .list {
+  padding: 20px 0 0 0;
+  height: 508px;
+  overflow: hidden;
+  width: 100%;
+}
+.recommended-book_left .tab_content .content .list li {
+  float: left;
+  width: 150px;
+  margin-right: 42px;
+  margin-bottom: 30px;
+  height: 233px;
+  position: relative;
+}
+.recommended-book_left .tab_content .content .list li .img {
+  width: 150px;
+  height: 150px;
+  display: block;
+}
+.recommended-book_left .tab_content .content .list li .img img {
+  width: 100%;
+  height: 100%;
+}
+.recommended-book_left .tab_content .content .list li .name {
+  padding: 7px 20px 0;
+  height: 18px;
+  line-height: 18px;
+  overflow: hidden;
+}
+.recommended-book_left .tab_content .content .list li .name a {
+  color: #000;
+}
+.recommended-book_left .tab_content .content .list li .name a:hover {
+  color: #e4393c;
+  text-decoration: underline;
+}
+.recommended-book_left .tab_content .content .list li .author {
+  padding: 0 20px;
+  height: 24px;
+  line-height: 24px;
+  overflow: hidden;
+  color: #aaa;
+}
+.recommended-book_left .tab_content .content .list li .price {
+  padding-left: 20px;
+  height: 36px;
+  line-height: 16px;
+  font-family: "Arial";
+  font-size: 14px;
+  position: relative;
+}
+.recommended-book_left .tab_content .content .list li .price .rob {
+  color: #c30;
+  float: left;
+  margin-right: 12px;
+  font-weight: bold;
+}
+.recommended-book_left .tab_content .content .list li .price .price_r {
+  color: #aaa;
+  text-decoration: line-through;
+  float: left;
+  overflow: hidden;
+}
+.recommended-book_right {
+  width: 250px;
+  float: right;
+  height: 500px;
+}
+.recommended-book_right .title {
+  height: 49px;
+  line-height: 55px;
+  padding-left: 40px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  border-bottom: 2px solid #e4393c;
+  background: url(../images/rank.png) 5px 10px no-repeat;
+  font-family: "Microsoft Yahei";
+  position: relative;
+  overflow: hidden;
+}
+.recommended-book_right .book_content {
+  border: 1px solid #eaeaea;
+  border-top: 0;
+}
+.recommended-book_right ul li {
+  border-bottom: 1px dotted #d8d8d8;
+  width: 230px;
+  margin-left: 10px;
+  overflow: hidden;
+}
+.recommended-book_right ul li > span.num {
+  width: 29px;
+  line-height: 36px;
+  padding-left: 6px;
+  float: left;
+  font-size: 16px;
+  color: #000;
+}
+.recommended-book_right ul li .name {
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  position: relative;
+  overflow: hidden;
+  width: 182px;
+}
+.recommended-book_right ul li .name a {
+  color: #000;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.recommended-book_right ul li .detail {
+  width: 195px;
+  float: left;
+  padding: 12px 0;
+  position: relative;
+  display: none;
+}
+.recommended-book_right ul li .detail .img {
+  display: block;
+  width: 120px;
+  height: 120px;
+}
+.recommended-book_right ul li .detail .img img {
+  display: block;
+  width: 120px;
+  height: 120px;
+}
+.recommended-book_right ul li .detail .name {
+  float: right;
+  width: 75px;
+  height: 44px;
+  line-height: 22px;
+  position: absolute;
+  overflow: hidden;
+  top: 9px;
+  right: 0;
+}
+.recommended-book_right ul li .detail .name a:hover {
+  color: #e4393c;
+  text-decoration: underline;
+}
+.recommended-book_right ul li .detail .price {
+  position: absolute;
+  top: 60px;
+  left: 120px;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Arial";
+  color: #c30000;
+  height: 20px;
+  font-weight: 700;
+}
+.recommended-book_right ul li .detail .link {
+  position: absolute;
+  left: 120px;
+  top: 97px;
+  color: #487a6f;
+}
+.recommended-book_right ul li .detail .link a {
+  color: #487a6f;
+}
+.recommended-book_right ul li .detail .link a:hover {
+  text-decoration: underline;
+}
+.recommended-book_right .more_top {
+  color: #5097bc;
+  width: 240px;
+  background: #fff;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+}
+.storey_three {
+  padding: 20px 0;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eaeaea;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: space-between;
+}
+.storey_three a {
+  display: block;
+  width: 382px;
+}
